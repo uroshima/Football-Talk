@@ -1,0 +1,120 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255,255,255,.65);
+  z-index: 10;
+}
+
+.modal-child {
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(https://communityfootball.files.wordpress.com/2014/05/boy_looking_at_football_street_art.jpg);
+}
+
+.login-form {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 70px;
+}
+
+.signin-button-modal {
+  color: white;
+  font-size: 18px;
+  // margin-right: 16px;
+  // margin-left: 16px;
+  display: inline-block;
+}
+
+.modal-bottom-buttons {
+  margin-left: 250px;
+}
+
+.modal-bottom-buttons:hover {
+  opacity: 0.5;
+}
+
+.modal-content {
+  width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: cursive;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.modal-form {
+  height: 300px;
+}
+
+.login-input {
+  text-align: center;
+  height: 25px;
+  padding: 0 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.modal-buttons {
+   background: none!important;
+   color: white;
+   font-size: 18px;
+   border: none;
+   padding: 0!important;
+   font: inherit;
+   /*border is optional*/
+   border-bottom: 1px solid #444;
+   cursor: pointer;
+}
+
+.modal-buttons:hover {
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  cursor: pointer;
+  top: -10px;
+  right: 0px;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+}
+
+.modal-guest-button {
+  margin-left: 300px;
+  border-radius: 4px;
+  margin-right: 5px;
+  border: 1px solid;
+  display: inline-block;
+  border-color: black;
+  font-family: sans-serif;
+  color: black;
+  height: 37px;
+  font-size: 14px;
+  padding: 0 16px;
+}

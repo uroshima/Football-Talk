@@ -1,0 +1,97 @@
+.nav-bar {
+  height: 120px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  position:relative;
+}
+
+a {
+  justify-content: space-between;
+  margin: 10px;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 13px;
+  position:relative;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  // margin-top: 10px;
+  margin-left: 200px;
+}
+
+.middle-bar {
+  height: 15px;
+  width: 80%;
+  padding-top: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: black;
+  margin-left: 200px;
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 35px;
+  color: rgba(0,0,0,.84);
+  align-self: center;
+  font-family: sans-serif;
+}
+
+.div-become {
+  color: gray;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+button {
+  color: #03a87c;
+  font-style: sans-serif;
+  cursor: pointer;
+}
+
+.signin-button {
+  color: #03a87c;
+  font-size: 14px;
+  margin-right: 16px;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.top-bar-buttons {
+  border-radius: 4px;
+  margin-right: 5px;
+  border: 1px solid;
+  display: inline-block;
+  border-color: #03a87c;
+  font-family: sans-serif;
+  color: #03a87c;
+  height: 37px;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.greeting {
+  justify-content: space-between;
+  margin: 2px;
+  float:right;
+}
+
+.logout-currentUser {
+  align-items: center;
+}
