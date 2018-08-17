@@ -5,6 +5,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import CreateStoryContainer from './story/create_story_container';
 import Homepage from './homepage/homepage';
 import ShowStory from './story/show';
+import EditStory from './story/edit_story_container';
 import {
   Route,
   Redirect,
@@ -23,6 +24,7 @@ const App = () => (
     <Switch>
       <ProtectedRoute path='/stories/new' component={CreateStoryContainer} />
       <ProtectedRoute path='/stories/:id' component={ShowStory} />
+      <ProtectedRoute path='/stories/:id/edit' component={EditStory} />
       <Route exact path="/homepage" component={Homepage} />
       <Route exact path="/login" component={Modal} />
       <Route exact path="/signup" component={SignUpFormContainer} />

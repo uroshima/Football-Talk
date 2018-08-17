@@ -46,6 +46,7 @@ class StoryForm extends React.Component {
 
 
   render() {
+    debugger
     const currentUser = this.props.currentUser;
     const preview = this.state.photoUrl ? <img src={this.state.photoUrl}></img> : null;
 
