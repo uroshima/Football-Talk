@@ -17,16 +17,16 @@ const Header = () => (
       </div>
     </div>
     <div className="middle-bar">
-      <a>HOME</a>
-      <a>WORLD CUP</a>
-      <a>CHAMPIONS LEAGUE</a>
-      <a>PREMIER LEAGUE</a>
-      <a>LA LIGA</a>
-      <a>SERIE A</a>
-      <a>BUNDESLIGA</a>
-      <a>LEAGUE 1</a>
-      <a>TRANSFER TALK</a>
-      <a>WAGS</a>
+      <a className="categories">HOME</a>
+      <a className="categories">WORLD CUP</a>
+      <a className="categories">CHAMPIONS LEAGUE</a>
+      <a className="categories">PREMIER LEAGUE</a>
+      <a className="categories">LA LIGA</a>
+      <a className="categories">SERIE A</a>
+      <a className="categories">BUNDESLIGA</a>
+      <a className="categories">LEAGUE 1</a>
+      <a className="categories">TRANSFER TALK</a>
+      <a className="categories">WAGS</a>
     </div>
   </div>
 )

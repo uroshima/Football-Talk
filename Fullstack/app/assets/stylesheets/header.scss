@@ -6,13 +6,14 @@
   position:relative;
 }
 
-a {
+.categories {
   justify-content: space-between;
   margin: 10px;
   font-weight: 400;
   padding: 10px;
   font-size: 13px;
   position:relative;
+  cursor: no-drop;
 }
 
 .top-bar {
@@ -49,6 +50,11 @@ a {
   font-size: 14px;
   font-family: sans-serif;
   display: block;
+  cursor: no-drop;
+}
+
+.search-icon {
+  cursor: no-drop;
 }
 
 .header {
@@ -73,6 +79,10 @@ button {
   display: inline-block;
 }
 
+.signin-button:hover {
+  opacity: 0.3;
+}
+
 .top-bar-buttons {
   border-radius: 4px;
   margin-right: 5px;
@@ -84,6 +94,10 @@ button {
   height: 37px;
   font-size: 14px;
   padding: 0 16px;
+}
+
+.top-bar-buttons:hover {
+  opacity: 0.3;
 }
 
 .greeting {

@@ -8,7 +8,7 @@ import { createStory }  from '../../actions/story_actions';
 const Greeting = ({ currentUser, logout, openModal, createStory }) => {
   const sessionLinks = () => (
     <div className="greeting">
-      <img src={window.search} />
+      <img src={window.search} className="search-icon"/>
       <Link to="/homepage" className="signin-button" onClick={() => openModal('login')}>Sign in</Link>
       <button className="top-bar-buttons" onClick={() => openModal('signup')}>Get started</button>
       <button className="top-bar-buttons" onClick={() => dispatch(login({email: 'email', password: 'password'}))}>Guest Tour</button>
