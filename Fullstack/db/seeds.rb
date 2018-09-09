@@ -74,7 +74,7 @@ urosh_story = Story.new({
  However, as Timothy Bridge, author of Deloitte 's 'Football Money League' explains, Juve haven't just signed Ronaldo to help them on the field.
 
  "The reasoning behind signing Ronaldo will have been two-fold," he tells Goal . "Firstly, it will be about trying to ensure that they not just maintain but raise the level of their on-field performances over the past few years.
-
+ 
  "They believe that, even at 33, Ronaldo can win them the Champions League. Anyone who's watched Juve's Netflix documentary will know that European success is their primary aim.
 
  "They've won Serie A seven years in a row; now they want the Champions League. And they, quite understandably, believe that Ronaldo can help them do it.
