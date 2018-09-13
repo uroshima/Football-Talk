@@ -27,9 +27,9 @@ class ShowStory extends React.Component {
           <img className="story-photo" src={this.props.story.photo} alt="storyImageurl"></img>
         </div>
         <div className="content1">
-          <p className="story-content">
+          <h3 className="story-content">
             {this.props.story.content}
-          </p>
+          </h3>
         </div>
       </div>
     );

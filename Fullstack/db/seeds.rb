@@ -74,7 +74,7 @@ urosh_story = Story.new({
  However, as Timothy Bridge, author of Deloitte 's 'Football Money League' explains, Juve haven't just signed Ronaldo to help them on the field.
 
  "The reasoning behind signing Ronaldo will have been two-fold," he tells Goal . "Firstly, it will be about trying to ensure that they not just maintain but raise the level of their on-field performances over the past few years.
- 
+
  "They believe that, even at 33, Ronaldo can win them the Champions League. Anyone who's watched Juve's Netflix documentary will know that European success is their primary aim.
 
  "They've won Serie A seven years in a row; now they want the Champions League. And they, quite understandably, believe that Ronaldo can help them do it.
@@ -101,6 +101,14 @@ urosh_story = Story.new({
 ),
  author_id: urosh.id
   })
+
+#   paragraph_length = rand(10..30)
+# paragraph_number = rand(3..15)
+# body = ""
+#
+# (paragraph_number).times do |i|
+#   body += (Faker::Lorem.paragraphs(paragraph_length).join(" ") + "\n")
+#   end
 
   urosh_story.photo.attach(io: File.open(File.join(Rails.root,'app/assets/images/cristiano-ronaldo-juventus_1xn2okpz3lm9v13oeqarpzi9j7.jpg')), filename: "urosh_story.jpg")
   urosh_story.save!

@@ -20,7 +20,7 @@
   },
   "scripts": {
     "postinstall": "webpack",
-    "webpack": "webpack --watch --mode=development"
+    "start": "webpack --watch --mode=development"
   },
   "engines": {
     "node": "8.9.4",
