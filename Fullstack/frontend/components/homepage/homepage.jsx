@@ -28,6 +28,7 @@ class Homepage extends React.Component {
         <div className = "homepage">
           <MainIndex stories={this.props.stories}></MainIndex>
         </div>
+        <a href="https://football-talk.herokuapp.com/#/homepage">Back to top</a> 
       </div>
     );
   }
