@@ -16,18 +16,7 @@ const Header = () => (
         <Modal />
       </div>
     </div>
-    <div className="middle-bar">
-      <a className="categories">HOME</a>
-      <a className="categories">WORLD CUP</a>
-      <a className="categories">CHAMPIONS LEAGUE</a>
-      <a className="categories">PREMIER LEAGUE</a>
-      <a className="categories">LA LIGA</a>
-      <a className="categories">SERIE A</a>
-      <a className="categories">BUNDESLIGA</a>
-      <a className="categories">LEAGUE 1</a>
-      <a className="categories">TRANSFER TALK</a>
-      <a className="categories">WAGS</a>
-    </div>
+
   </div>
 )
 
