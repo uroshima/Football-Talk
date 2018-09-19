@@ -27,8 +27,8 @@ const App = () => (
       <ProtectedRoute path='/stories/:id/edit' component={EditStory} />
       <Route exact path="/homepage" component={Homepage} />
       <Route exact path="/login" component={Modal} />
-      <Route exact path="/signup" component={SignUpFormContainer} />
-      <Route exact path="/" component={Homepage} />
+      <Route exact path="/signup" component={Modal} />
+      // <Route exact path="/" component={Homepage} />
       <Redirect to="/homepage" />
     </Switch>
   </div>
