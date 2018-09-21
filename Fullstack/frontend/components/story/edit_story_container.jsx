@@ -17,7 +17,6 @@ class EditStory extends React.Component {
   // }
 
   render() {
-    debugger;
     <StoryForm
       story={this.props.story}
       type={this.props.type}

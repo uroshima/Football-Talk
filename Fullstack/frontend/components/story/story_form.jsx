@@ -56,8 +56,8 @@ class StoryForm extends React.Component {
           </Link>
 
           <div className="story-form-author-info">
-            <Link to={`/users/${currentUser.id}`}>
-            <p className="story-form-author-name">{currentUser.name}</p>
+            <Link to={`/users/${currentUser.id}`} className="proba">
+            <p className="story-form-author-name">{currentUser.email}</p>
             </Link>
           </div>
 

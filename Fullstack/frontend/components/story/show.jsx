@@ -11,11 +11,14 @@ class ShowStory extends React.Component {
 
   render() {
     if (!this.props.story) {
+    // if (!this.props.story || !this.props.author) {
       return (<div></div>);
     }
+    const author = this.props.author;
     return (
       <div className="story">
         <div>
+
           <h1 className="show-story-title">
             {this.props.story.title}
           </h1>
