@@ -12,7 +12,6 @@ class ShowStory extends React.Component {
   render() {
     console.log(this.props.author)
     if (!this.props.story || !this.props.author) {
-    // if (!this.props.story || !this.props.author) {
       return (<div></div>);
     }
     // const author = this.props.author;
