@@ -20,7 +20,6 @@ class EditStory extends React.Component {
     <StoryForm
       story={this.props.story}
       type={this.props.type}
-
       submitAction={this.props.submitAction}
     />
   }
