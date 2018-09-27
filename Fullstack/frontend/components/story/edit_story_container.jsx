@@ -7,14 +7,14 @@ import { updateStory, fetchStory } from '../../actions/story_actions';
 class EditStory extends React.Component {
 
   componentDidMount() {
-    this.props.fetchStory(this.props.match.params.id);
+    this.props.fetchStory(this.props.story.id);
   }
 
-  // componentWillReceiveProps (newProps) {
-  //   if (newProps.story.id !== this.props.story.id) {
-  //     this.props.fetchStory(newProps.story.id)
-  //   }
-  // }
+  componentWillReceiveProps (newProps) {
+    if (newProps.story.id !== this.props.story.id) {
+      this.props.fetchStory(newProps.story.id)
+    }
+  }
 
   render() {
     <StoryForm
@@ -27,7 +27,8 @@ class EditStory extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => ({
-  story: state.entities.stories[ownProps.match.params.id],
+  // story: state.entities.stories[ownProps.match.params.id],
+  story: state.entities.stories[id],
   type: 'Edit'
 })
 
