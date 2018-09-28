@@ -5,7 +5,7 @@ class User < ApplicationRecord
 
   attr_reader :password
 
-  after_initialize :ensure_session_token
+  after_initialize :ensure_session_token, :ensure_user_avatar
 
   has_many :stories
   has_one_attached :avatar
@@ -33,5 +33,9 @@ class User < ApplicationRecord
 
   def ensure_session_token
     self.session_token ||= SecureRandom.urlsafe_base64
+  end
+
+  def ensure_user_avatar
+    self.avatar
   end
 end
