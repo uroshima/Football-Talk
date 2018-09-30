@@ -6,17 +6,21 @@ import { fetchStory } from '../../actions/story_actions';
 
 class ShowStory extends React.Component {
   componentDidMount() {
-    this.props.fetchStory(this.props.match.params.id);
+    this.props.fetchStory(this.props.match.params.id).then(() => (this.setState({})));
   }
 
   render() {
-    // console.log(this.props.author)
+    // console.log(this.props.author[this.props.story.author_id])
+    // console.log(this.props.story.author_id)
     if (!this.props.story) {
       return (<div></div>);
     }
     // const author = this.props.author;
     return (
       <div className="story">
+        <div>
+          {this.props.author.email}
+        </div>
         <div>
 
           <h1 className="show-story-title">
@@ -46,6 +50,7 @@ const mapStateToProps = (state, ownProps) => {
   if (story) {
     author = state.entities.users[story.author_id];
   }
+  console.log(author)
   return {
     story: story,
     author: author

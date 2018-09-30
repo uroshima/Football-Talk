@@ -3,5 +3,5 @@ json.story do
 end
 
 json.user do
-  json.extract! @story.author, :id, :email
+  json.extract! @story.author, :id, :email, :avatar, :name
 end

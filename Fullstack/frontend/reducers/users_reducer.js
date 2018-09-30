@@ -1,4 +1,5 @@
 import merge from 'lodash/merge';
+import { RECEIVE_STORY } from '../actions/story_actions';
 
 import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER } from '../actions/session';
 
@@ -12,6 +13,8 @@ const usersReducer = (state = {}, action) => {
       let newState = merge({}, state);
       delete newState[action.user.id]
       return newState;
+    case RECEIVE_STORY:
+      return merge({}, state, { [action.payload.user.id]: action.payload.user });
     default:
     // debugger
       return state;
