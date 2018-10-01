@@ -13,7 +13,6 @@ protect_from_forgery with: :null_session
   end
 
   private
-
   def user_params
     params.require(:user).permit(:email, :password, :name)
   end
