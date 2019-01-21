@@ -1,23 +1,18 @@
 class Api::StoriesController < ApplicationController
 
-  before_action :require_logged_in, only: [:create, :edit, :update, :destroy]
+  before_action :require_logged_in, only: [:create, :create, :update, :destroy]
 
-  def new
-    @story = Story.new
+  def index
+    @stories = Story.all.includes(:author)
+
     render :index
   end
 
   def create
     @story = Story.new(story_params)
-    # optional
-    # if (params[:story][:photo])
-    #     @story.photo = params[:story][:photo]
-    # else
-      # @story.photo = sfasdfsadf? File.open(io: 'app/assets/images/____.jpg')
-    # end
-
     @story.author_id = current_user.id
-    if @story.save!
+
+    if @story.save
       render :show
     else
       render json: @story.errors.full_messages, status: 422
@@ -26,44 +21,45 @@ class Api::StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id])
+
+    is_followed = current_user.followed_users.where(id: @story.author_id)
+    @currentUserFollows= !is_followed.empty?
+
     if @story
       render :show
     else
-      render json: ["Story doen't exist"], status: 404
+      render json: ["Story doesn't exist"], status: 404
     end
   end
 
-  def index
-    @stories = Story.all
-  end
-
-  def edit
-    @story = Story.find(params[:id])
-    render :edit
-  end
-
   def update
-    @story = current_user.authored_stories.find(params[:story][:id])
-    if @story.update_attributes(story_params)
-      render :show
+    @story = current_user.authored_stories(id: params[:id])
+
+    if @story
+      if @story.update(story_params)
+        render :show
+      else
+        render json: @story.errors.full_messages, status: 422
+      end
     else
-      render json: @story.errors.full_messages, status: 422
-      render :edit
+      render json: ["Can't update this story"], status: 401
     end
   end
 
   def destroy
-    @story = current_user.stories.where(id: params[:id])
+    @story = current_user.authored_stories(id: params[:id])
+
     if @story
       @story.destroy
       render :show
     else
       render json: ["Can't destroy this story"], status: 401
     end
-
   end
 
+  private
+
   def story_params
-    params.require(:story).permit(:title, :content, :subtitle, :photo, :created_at)
+    params.require(:story).permit(:title, :header, :body, :photo)
   end
 end
