@@ -1,6 +1,6 @@
 class Api::UsersController < ApplicationController
 
-  before_action :require_logged_in, only: [:show, :update]
+  # before_action :require_logged_in, only: [:show, :update]
 
   def index
     @users = User.all
@@ -25,7 +25,7 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      login!(@user)
+      login(@user)
       render :show
     else
 
@@ -46,6 +46,6 @@ class Api::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :email, :password, :biography, :avatar)
+    params.require(:user).permit(:email, :password)
   end
 end

@@ -10,6 +10,7 @@ Story.destroy_all
 
 demoUser = User.new({
   email: "email",
+  # username: "user",
   password: "password"
 })
 
@@ -17,6 +18,7 @@ demoUser.save!
 
 urosh = User.new({
   email: "urosh",
+  # username: "user",
   password: "password"
 })
 
@@ -24,6 +26,7 @@ urosh.save!
 
 cherry = User.new({
   email: "cherry",
+  # username: "user",
   password: "password"
 })
 
@@ -31,6 +34,7 @@ cherry.save!
 
 darko = User.new({
   email: "darko",
+  # username: "user",
   password: "password"
 })
 
@@ -38,6 +42,7 @@ darko.save!
 
 ucko = User.new({
   email: "ucko",
+  # username: "user",
   password: "password"
 })
 

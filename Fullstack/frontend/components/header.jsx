@@ -7,15 +7,14 @@ const Header = () => (
 
   <div className='nav-bar'>
     <div className='top-bar'>
-      <div className="div-become">Become a member</div>
       <Link to="/homepage">
         <h1 className="main-title">Football Talk</h1>
       </Link>
       <GreetingContainer />
+    </div>
       <div>
         <Modal />
       </div>
-    </div>
   </div>
 )
 

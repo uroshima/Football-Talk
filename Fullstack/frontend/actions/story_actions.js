@@ -5,6 +5,7 @@ export const RECEIVE_STORY = 'RECEIVE_STORY';
 export const RECEIVE_STORY_ERRORS = 'RECEIVE_STORY_ERRORS';
 
 export const receiveAllStories = payload => {
+  console.log("Inside receiveAllStories", payload);
   return {
     type: RECEIVE_ALL_STORIES,
     payload

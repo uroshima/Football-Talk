@@ -1,4 +1,4 @@
-json.extract! user, :id, :username, :email, :biography
+json.extract! user, :id, :email
 json.day user.created_at.day
 json.month user.created_at.month
 json.year user.created_at.year

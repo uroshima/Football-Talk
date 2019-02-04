@@ -1,7 +1,7 @@
 json.stories do
   @stories.each do |story|
     json.set! story.id do
-      json.extract! story, :id, :title, :header, :body, :author_id
+      json.extract! story, :id, :title, :subtitle, :content, :author_id
       json.date story.date
       json.readTime story.read_time
 
@@ -15,7 +15,7 @@ end
 json.users do
   @stories.each do |story|
     json.set! story.author.id do
-      json.extract! story.author, :id, :email, :username
+      json.extract! story.author, :id, :email
       if story.author.avatar.attached?
         json.avatar url_for(story.author.avatar)
       end
