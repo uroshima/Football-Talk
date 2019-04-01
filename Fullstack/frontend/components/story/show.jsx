@@ -19,7 +19,7 @@ class ShowStory extends React.Component {
     return (
       <div className="story">
         <div>
-          {this.props.author.email}
+          {/* {this.props.author.email} */}
         </div>
         <div>
 
