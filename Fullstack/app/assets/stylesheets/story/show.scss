@@ -1,5 +1,5 @@
 .story {
-  padding-top: 150px;
+  // padding-top: 150px;
   margin: 0 auto;
   width: 900px;
   margin-bottom: 30px;
@@ -26,10 +26,13 @@
 }
 
 .story-content {
-  font-size: 1.1rem;
-  font-weight: lighter;
   padding-top: 450px;
   white-space: pre-wrap;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
 }
 
 .content1 {
