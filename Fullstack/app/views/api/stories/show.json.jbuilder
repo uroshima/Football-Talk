@@ -1,5 +1,3 @@
-
-
 json.story do
   json.extract! @story, :id, :title, :content, :subtitle, :author_id, :created_at
   if @story.photo.attached?

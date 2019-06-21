@@ -22,9 +22,6 @@ class Api::StoriesController < ApplicationController
   def show
     @story = Story.find(params[:id])
 
-    # is_followed = current_user.followed_users.where(id: @story.author_id)
-    # @currentUserFollows= !is_followed.empty?
-
     if @story
       render :show
     else

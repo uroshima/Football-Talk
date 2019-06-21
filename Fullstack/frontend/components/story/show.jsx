@@ -50,7 +50,6 @@ const mapStateToProps = (state, ownProps) => {
   if (story) {
     author = state.entities.users[story.author_id];
   }
-  console.log(author)
   return {
     story: story,
     author: author

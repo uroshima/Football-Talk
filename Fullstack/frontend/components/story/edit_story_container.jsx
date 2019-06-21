@@ -26,7 +26,6 @@ class EditStory extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => ({
-  // story: state.entities.stories[ownProps.match.params.id],
   story: state.entities.stories[id],
   type: 'Edit'
 })

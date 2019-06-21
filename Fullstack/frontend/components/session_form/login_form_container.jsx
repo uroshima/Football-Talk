@@ -26,5 +26,3 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);
-
-// <Link to="/homepage" className="signin-button" onClick={() => openModal('login')}>Sign in</Link>
