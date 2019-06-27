@@ -10,19 +10,12 @@ class ShowStory extends React.Component {
   }
 
   render() {
-    // console.log(this.props.author[this.props.story.author_id])
-    // console.log(this.props.story.author_id)
     if (!this.props.story) {
       return (<div></div>);
     }
-    // const author = this.props.author;
     return (
       <div className="story">
         <div>
-          {/* {this.props.author.email} */}
-        </div>
-        <div>
-
           <h1 className="show-story-title">
             {this.props.story.title}
           </h1>

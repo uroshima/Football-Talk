@@ -54,43 +54,39 @@ class StoryForm extends React.Component {
         <div className="story-form-author-container">
           <Link to={`/users/${currentUser.id}`}>
           </Link>
-
           <div className="story-form-author-info">
             <Link to={`/users/${currentUser.id}`} className="proba">
             <p className="story-form-author-name">{currentUser.email}</p>
             </Link>
           </div>
-
         </div>
         <form className="story-form" onSubmit={this.handleSubmit}>
-
           <input className="story-form-title"
             type="text"
             value={this.state.title}
             onChange={this.update('title')}
-            placeholder="Title"></input>
-
+            placeholder="Title">
+          </input>
           <input className="story-form-subtitle"
               type="text"
               value={this.state.subtitle}
               onChange={this.update('subtitle')}
-              placeholder="Subtitle"></input>
-
+              placeholder="Subtitle">
+          </input>
           <textarea className="story-form-content"
               type="text"
               value={this.state.content}
-              onChange={this.update('content')}></textarea>
-
+              onChange={this.update('content')}>
+          </textarea>
           <input type="file"
             className="modal-add-avatar"
-            onChange={this.handleFile.bind(this)}></input>
-
+            onChange={this.handleFile.bind(this)}>
+          </input>
           {preview}
-
           <input className="story-form-button"
             type="submit"
-            value={this.props.type}></input>
-
+            value={this.props.type}>
+          </input>
         </form>
       </div>
     );

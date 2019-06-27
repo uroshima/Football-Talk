@@ -3,10 +3,8 @@ import { closeModal } from '../actions/modal_actions';
 import { connect } from 'react-redux';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
-// import modalReducer from './reducers/modal_reducer'
 
 function Modal({modal, closeModal}) {
-  // debugger
   if (!modal) {
     return null;
   }

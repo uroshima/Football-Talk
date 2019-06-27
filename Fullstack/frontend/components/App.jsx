@@ -24,7 +24,7 @@ const App = () => (
     <Switch>
       <ProtectedRoute path='/stories/new' component={CreateStoryContainer} />
       <ProtectedRoute path='/stories/:id' component={ShowStory} />
-      //i dont need  /edit for now but maybe in the future
+      {/* i dont need edit for now but maybe in the future */}
       <ProtectedRoute path='/stories/:id/edit' component={EditStory} />
       <Route exact path="/homepage" component={Homepage} />
       <Route exact path="/login" component={Modal} />
