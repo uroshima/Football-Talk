@@ -7,7 +7,6 @@ const usersReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_CURRENT_USER:
-    // debugger
       return merge({}, state, { [action.user.id]: action.user });
     case LOGOUT_CURRENT_USER:
       let newState = merge({}, state);
@@ -16,7 +15,6 @@ const usersReducer = (state = {}, action) => {
     case RECEIVE_STORY:
       return merge({}, state, { [action.payload.user.id]: action.payload.user });
     default:
-    // debugger
       return state;
   }
 };
