@@ -51,7 +51,7 @@ class StoryForm extends React.Component {
 
     return (
       <div className="story-form-container">
-        <div className="story-form-author-container">
+        {/* <div className="story-form-author-container">
           <Link to={`/users/${currentUser.id}`}>
           </Link>
           <div className="story-form-author-info">
@@ -59,15 +59,15 @@ class StoryForm extends React.Component {
             <p className="story-form-author-name">{currentUser.email}</p>
             </Link>
           </div>
-        </div>
+        </div> */}
         <form className="story-form" onSubmit={this.handleSubmit}>
-          <input className="story-form-title"
+          <input className="story-form-titles"
             type="text"
             value={this.state.title}
             onChange={this.update('title')}
             placeholder="Title">
           </input>
-          <input className="story-form-subtitle"
+          <input className="story-form-titles"
               type="text"
               value={this.state.subtitle}
               onChange={this.update('subtitle')}
@@ -76,7 +76,8 @@ class StoryForm extends React.Component {
           <textarea className="story-form-content"
               type="text"
               value={this.state.content}
-              onChange={this.update('content')}>
+              onChange={this.update('content')}
+              placeholder="Content">
           </textarea>
           <input type="file"
             className="modal-add-avatar"
