@@ -7,7 +7,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "jquery-ujs": "^1.2.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
